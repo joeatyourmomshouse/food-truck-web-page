@@ -1,0 +1,86 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #e1e1e1;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #3e2a47; /* Deep purple, Dune inspired */
+    color: #f4f4f4;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Georgia', serif;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+section.menu {
+    background: #c4a380; /* Light desert sand color */
+    padding: 40px 0;
+}
+
+section.menu h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Georgia', serif;
+}
+
+.menu-item {
+    background: #6f4f28; /* Spice brown color */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.menu-item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.menu-item .price {
+    display: block;
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #f1c232; /* Gold, spice color */
+}
+
+footer {
+    background: #3e2a47;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.1em;
+}
+
+footer p {
+    font-style: italic;
+}
