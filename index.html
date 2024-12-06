@@ -1,35 +1,109 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Spice Wagon - Dune Inspired Food Truck</title>
+    <meta name="description" content="The Spice Wagon - A Dune-inspired food truck offering spice cookies, drinks, and more. Taste the desert, taste Arrakis.">
+    <title>The Spice Wagon | Dune Inspired Food Truck</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- HEADER SECTION -->
     <header>
         <div class="container">
-            <h1>The Spice Wagon</h1>
-            <p>Your journey into the deserts of flavor begins here.</p>
+            <div class="header-content">
+                <h1>The Spice Wagon</h1>
+                <p class="tagline">Experience the flavors of Arrakis</p>
+            </div>
         </div>
     </header>
     
+    <!-- MENU SECTION -->
     <section class="menu">
         <div class="container">
             <h2>Our Menu</h2>
-            <div class="menu-item">
-                <h3>Spice Cookies</h3>
-                <p>A sweet and spicy treat infused with the essence of the desert. Only the finest spice melange goes into our cookies, crafted to give you a taste of Arrakis.</p>
-                <span class="price">$4.99</span>
+            <div class="menu-items">
+
+                <!-- Spice Cookies -->
+                <div class="menu-item">
+                    <h3>Spice Cookies</h3>
+                    <p>A sweet and spicy treat infused with the essence of the desert. Crafted with the finest melange spice, these cookies will transport your senses to the sands of Arrakis.</p>
+                    <div class="price-container">
+                        <span class="price">$4.99</span>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Fremen Brew -->
+                <div class="menu-item">
+                    <h3>Fremen Brew</h3>
+                    <p>A strong, energizing drink inspired by the Fremen of Arrakis. Infused with spices from the desert, this brew will keep you going through the harshest of journeys.</p>
+                    <div class="price-container">
+                        <span class="price">$3.49</span>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Sandworm Tacos -->
+                <div class="menu-item">
+                    <h3>Sandworm Tacos</h3>
+                    <p>Filled with tender meat from the giant sandworms of Arrakis. These tacos are a true desert delicacy, with a blend of spices that will make your tastebuds shudder with delight.</p>
+                    <div class="price-container">
+                        <span class="price">$6.99</span>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Arrakis Ice Cream -->
+                <div class="menu-item">
+                    <h3>Arrakis Ice Cream</h3>
+                    <p>A sweet and spicy ice cream dessert infused with melange flavor. Cool down and spice up your day with this rare treat from the sands of Arrakis.</p>
+                    <div class="price-container">
+                        <span class="price">$5.49</span>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Desert Mirage Smoothie -->
+                <div class="menu-item">
+                    <h3>Desert Mirage Smoothie</h3>
+                    <p>A refreshing drink made with cactus fruit and a touch of melange. It's the perfect way to quench your thirst while dreaming of the dunes.</p>
+                    <div class="price-container">
+                        <span class="price">$4.49</span>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Spice Shakes -->
+                <div class="menu-item">
+                    <h3>Spice Shakes</h3>
+                    <p>A rich, creamy shake with a dash of Arrakis' finest spices. A unique twist on a classic dessert drink.</p>
+                    <div class="price-container">
+                        <span class="price">$3.99</span>
+                        <button class="order-button">Order Now</button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     
+    <!-- FOOTER SECTION -->
     <footer>
         <div class="container">
-            <p>Made with passion in the heart of Arrakis.</p>
+            <p class="footer-text">Made with passion in the heart of Arrakis. Designed by Spice Wagon Creators.</p>
         </div>
     </footer>
+
+    <!-- Smooth Scroll for order button -->
+    <script>
+        document.querySelectorAll('.order-button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('Thank you for your order! Your delicious dish is on its way.');
+            });
+        });
+    </script>
 </body>
 </html>

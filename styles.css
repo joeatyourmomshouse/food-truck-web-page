@@ -1,86 +1,190 @@
-/* Resetting default styles */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body & Background */
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f4f4f4;
-    color: #e1e1e1;
+    font-family: 'Quicksand', sans-serif;
+    background: #e6e0c9; /* Soft sand color */
+    color: #d1c9c1; /* Light gray text */
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
+/* Container */
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Header Styles */
 header {
-    background: #3e2a47; /* Deep purple, Dune inspired */
+    background: linear-gradient(135deg, #5b3e5d, #3b2538); /* Rich Dune-inspired purple gradient */
     color: #f4f4f4;
-    padding: 30px 0;
     text-align: center;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
 }
 
 header h1 {
-    font-size: 3em;
-    font-family: 'Georgia', serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2em;
-    margin-top: 10px;
+header .tagline {
+    font-size: 1.5em;
+    font-weight: 300;
     font-style: italic;
+    opacity: 0.8;
 }
 
+/* Menu Section */
 section.menu {
-    background: #c4a380; /* Light desert sand color */
-    padding: 40px 0;
+    background: #d6a75b; /* Warm desert sand color */
+    padding: 80px 0;
+    text-align: center;
 }
 
 section.menu h2 {
-    text-align: center;
-    font-size: 2.5em;
+    font-size: 3em;
+    color: #4b2d2d; /* Dark spice brown */
+    font-family: 'Playfair Display', serif;
     margin-bottom: 30px;
-    font-family: 'Georgia', serif;
 }
 
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Menu Item Styles */
 .menu-item {
-    background: #6f4f28; /* Spice brown color */
-    border-radius: 8px;
-    padding: 20px;
-    margin: 20px 0;
+    background: #4e3b31; /* Spice brown */
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     color: #fff;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 .menu-item h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #f1c232; /* Spice gold */
+    text-transform: uppercase;
 }
 
 .menu-item p {
     font-size: 1.1em;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    color: #e1e1e1;
+    line-height: 1.5;
 }
 
-.menu-item .price {
-    display: block;
-    text-align: right;
-    font-size: 1.3em;
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.5em;
     font-weight: bold;
-    color: #f1c232; /* Gold, spice color */
+    color: #f1c232; /* Gold spice color */
 }
 
+.order-button {
+    background-color: #f1c232;
+    color: #4e3b31;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #d1b50e;
+}
+
+/* Footer Styles */
 footer {
-    background: #3e2a47;
+    background-color: #3b2538; /* Deep purple */
     color: #f4f4f4;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
     font-size: 1.1em;
 }
 
-footer p {
+footer .footer-text {
     font-style: italic;
+    opacity: 0.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    header .tagline {
+        font-size: 1.2em;
+    }
+
+    section.menu h2 {
+        font-size: 2.5em;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-item {
+        padding: 30px;
+    }
+
+    .order-button {
+        font-size: 1.1em;
+        padding: 10px 15px;
+    }
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-out;
 }
