@@ -12,6 +12,7 @@ body {
     color: #d1c9c1; /* Light gray text */
     line-height: 1.6;
     overflow-x: hidden;
+    scroll-behavior: smooth; /* Enables smooth scrolling across the entire page */
 }
 
 /* Container */
@@ -123,7 +124,7 @@ section.menu h2 {
 }
 
 .order-button:hover {
-    background-color: #d1b50e;
+    background-color: #d18a0e;
 }
 
 /* Footer Styles */
@@ -141,7 +142,7 @@ footer .footer-text {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 3000px) {
     header h1 {
         font-size: 2.8em;
     }
