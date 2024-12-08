@@ -32,9 +32,25 @@
           <button type="submit" class="submit-button">Send Message</button>
         </form>
       </section>
-      <a href="index.html">BACK</a>
-      <style>
-        /* General Body Styling */
+      <a href="index.html" class="my-link">BACK</a>
+</head>
+<body>
+<style>
+
+.my-link {
+      color: #3498db; /* Initial blue color */
+      text-decoration: none;
+      font-size: 18px;
+      position: relative;  /* Necessary for pseudo-elements */
+      transition: color 1s ease, font-size 0.5s ease; /* Transition for color and font-size */
+    }
+
+    
+    /* Hover effects */
+    .my-link:hover {
+      color: peru;  /* Change text color on hover */
+      font-size: 22px;  /* Increase font size on hover */
+    }
         body {
           font-family: 'Roboto', sans-serif;  /* Modern font family */
           background-color: #f4f7fb;

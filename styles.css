@@ -199,3 +199,17 @@ html {
     height: 100%;
   }
   
+.wiw {
+    color: #fff;
+    transition: color 1s ease;
+    text-decoration-line: none;
+}
+
+.my-link:focus {
+    outline: none;
+  }
+
+
+.wiw :hover {
+    color: #cd6e0f;
+}
