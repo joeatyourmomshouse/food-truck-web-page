@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact the spice wagon Creators</title>
+</head>
+<body>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us.</p>
+      
+        <!-- Contact Button (Mailto Link) -->
+        <a href="mailto:vrat.com@yahoo.com" class="contact-link">Email Us</a>
+      <h1>OR</h1>
+        <form action="https://formspree.io/f/xldekjnd" method="POST">
+          <div>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+      
+          <div>
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+      
+          <div>
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+      
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+      </section>
+      <a href="index.html">BACK</a>
+      <style>
+        /* General Body Styling */
+        body {
+          font-family: 'Roboto', sans-serif;  /* Modern font family */
+          background-color: #f4f7fb;
+          margin: 0;
+          padding: 0;
+          color: #333;
+        }
+      
+        /* Contact Section */
+        #contact {
+          max-width: 900px;
+          margin: 50px auto;
+          background-color: #ffffff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+      
+        /* Title Styling */
+        #contact h2 {
+          font-size: 2.5em;
+          margin-bottom: 10px;
+          color: #333;
+        }
+      
+        /* Paragraph Styling */
+        #contact p {
+          font-size: 1.1em;
+          margin-bottom: 20px;
+          color: #777;
+        }
+      
+        /* Contact Link Styling (Email Us Button) */
+        .contact-link {
+          display: inline-block;
+          padding: 15px 30px;
+          font-size: 1.1em;
+          color: #ffffff;
+          background-color: #3498db;
+          text-decoration: none;
+          border-radius: 50px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+          margin-bottom: 30px;
+        }
+      
+        /* Hover and Active State for the Contact Link */
+        .contact-link:hover {
+          background-color: #2980b9;
+          transform: scale(1.05);
+        }
+      
+        .contact-link:active {
+          background-color: #1f6f99;
+        }
+      
+        /* Form Styling */
+        form {
+          display: grid;
+          gap: 20px;
+          max-width: 500px;
+          margin: 0 auto;
+          background-color: #fafafa;
+          padding: 30px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      
+        /* Input and Textarea Fields */
+        input, textarea {
+          padding: 12px;
+          font-size: 1.1em;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          background-color: #f9f9f9;
+          transition: border-color 0.3s ease;
+        }
+      
+        input:focus, textarea:focus {
+          border-color: #3498db;
+          outline: none;
+        }
+      
+        /* Label Styling */
+        label {
+          font-size: 1.1em;
+          font-weight: bold;
+          margin-bottom: 8px;
+          color: #555;
+        }
+      
+        /* Submit Button Styling */
+        .submit-button {
+          padding: 15px 30px;
+          font-size: 1.2em;
+          background-color: #3498db;
+          color: white;
+          border: none;
+          border-radius: 50px;
+          cursor: pointer;
+        }
